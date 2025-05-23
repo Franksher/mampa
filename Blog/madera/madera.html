@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blog</title>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+			crossorigin="anonymous">
+		<link rel="stylesheet" href="madera.css">
+	</head>
+	<body>
+
+		<!-- == INICIO -- BARRA MENU == -->
+		<script defer>
+            document.addEventListener("DOMContentLoaded" , () => loadScript())
+
+            const loadScript = () => {
+                const toggleBtn= document.querySelector('.toggle_btn')
+                const toggleBtnIcon= document.querySelector('.toggle_btn i')
+                const dropDowMenu= document.querySelector('.dropdown_menu')
+
+                console.log({ toggleBtn, toggleBtnIcon, dropDowMenu })
+
+                toggleBtn.onclick = function(){
+                    dropDowMenu.classList.toggle('open')
+                }   
+            } 
+
+        </script>
+
+		<header>
+			<div class="navbar">
+				<div class="logo">
+					<a href="/mampa.html">MAMPA</a>
+				</div>
+				<ul class="links">
+					<li><a href="/Inicio/index.html">Inicio</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">Productos</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item"
+									href="/producto/muebles_nuevos/index.html">Muebles
+									Nuevos</a></li>
+							<li><a class="dropdown-item"
+									href="/producto/muebles_segunda/index.html">Muebles
+									De Segunda Mano</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item"
+									href="/producto/decoracion/index.html">Decoración</a></li>
+						</ul>
+					</li>
+					<li><a href="/proyectos/index.html">Proyectos</a></li>
+					<li><a href="/Recursos/recursos.html">Recursos</a></li>
+					<li><a href="/Blog/Blog.html">Blog</a></li>
+					<li><a href="/Nosotros/index.html">Nosotros</a></li>
+				</ul>
+				<a href="#" class="action_btn">Log In</a>
+				<div class="toggle_btn">
+					<i class="fa-solid fa-bars-staggered"></i>
+				</div>
+			</div>
+
+			<div class="dropdown_menu">
+				<li><a href="/Inicio/index.html">Inicio</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#"
+						role="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false">Productos</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item"
+								href="/producto/muebles_nuevos/index.html">Muebles
+								Nuevos</a></li>
+						<li><a class="dropdown-item"
+								href="/producto/muebles_segunda/index.html">Muebles
+								De Segunda Mano</a></li>
+						<li><a class="dropdown-item"
+								href="/producto/decoracion/index.html">Decoración</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item"
+								href="/producto/calculadora_graficas/index.html">Calculadora</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/Proyectos/index.html">Proyectos</a></li>
+				<li><a href="/Recursos/recursos.html">Recursos</a></li>
+				<li><a href="/Blog/Blog.html">Blog</a></li>
+				<li><a href="/Nosotros/index.html">Nosotros</a></li>
+				<li><a href="#" class="action_btn">Log In</a></li>
+			</div>
+		</header>
+
+		<!-- == FIN -- BARRA MENU == -->
+
+		<!-- == INICIO -- BLOG MADERA == -->
+
+		<span>
+			<header>
+				<h1 class="titulo1">La madera: Un recurso natural versátil y sostenible</h1>
+			</header>
+			<div class="container-all">
+				<div class="row">
+					<img src="/Blog/imagenes/madera/4.jpg" alt class="portada">
+					<main class>
+
+						<section>
+							<h2 class="subtitulo">¿Qué es la madera?</h2>
+							<p>La madera es un material natural obtenido del tejido leñoso de los
+								árboles. Es una estructura biológica compuesta principalmente de
+								celulosa, hemicelulosa y lignina, que le proporciona resistencia,
+								flexibilidad y durabilidad. Se ha utilizado desde tiempos antiguos para
+								la construcción, la fabricación de herramientas, muebles, instrumentos
+								musicales y más. Su abundancia, facilidad de trabajo y propiedades
+								físicas la convierten en uno de los materiales más valiosos del mundo.
+							</p>
+						</section>
+
+						<section>
+							<h2 class="subtitulo">Tipos de madera:</h2>
+							<img src="/Blog/imagenes/madera/1.jpg" alt class="imagen">
+							<h3>Maderas blandas</h3>
+							<ul>
+								<li><strong>Pino:</strong> Versátil y fácil de trabajar.</li>
+								<li><strong>Abeto:</strong> Ligero y resistente.</li>
+								<li><strong>Cedro:</strong> Resistente a humedad e insectos.</li>
+							</ul>
+							<h3>Maderas duras</h3>
+							<ul>
+								<li><strong>Roble:</strong> Muy resistente.</li>
+								<li><strong>Nogal:</strong> Bello y durable.</li>
+								<li><strong>Arce:</strong> Resistente al desgaste.</li>
+							</ul>
+							<img src="/Blog/imagenes/madera/2.jpg" alt class="imagen">
+						</section>
+
+						<section>
+							<h2 class="subtitulo">Materiales sostenibles en madera:</h2>
+							<ul>
+								<li><strong>Certificaciones:</strong> FSC (Forest Stewardship Council):
+									garantiza que la madera proviene de bosques gestionados de manera
+									ambientalmente adecuada y socialmente beneficiosa y PEFC (Programme for
+									the Endorsement of Forest Certification): promueve la gestión
+									sostenible
+									de los bosques.
+								</li>
+								<li><strong>Alternativas:</strong> El bambú y tableros reconstruidos
+									como
+									el OSB, MDF y contrachapado, fabricados a partir de residuos de
+									madera.</li>
+							</ul>
+						</section>
+
+						<section>
+							<h2 class="subtitulo">¿Cómo aprovechar la madera?</h2>
+							<img src="/Blog/imagenes/madera/5.jpg" alt class="imagen">
+							<p>El aprovechamiento de la madera puede hacerse de forma integral para
+								minimizar el desperdicio:</p>
+							<ul>
+								<li><strong>Construcción:</strong> casas, estructuras, puentes,
+									suelos.</li>
+								<li><strong>Mobiliario:</strong> mesas, sillas, armarios, camas.</li>
+								<li><strong>Decoración:</strong> paneles, molduras, artesanías.</li>
+								<li><strong>Energía:</strong> biomasa y pellets de madera para
+									calefacción sostenible.</li>
+								<li><strong>Industria:</strong> fabricación de papel, textiles (fibras
+									de
+									celulosa), instrumentos musicales.</li>
+								<p>El diseño inteligente y la reutilización son claves para maximizar la
+									vida útil de la madera.</p>
+							</ul>
+						</section>
+
+						<section>
+							<h2 class="subtitulo">Impacto de la madera en la industria y en el
+								mundo</h2>
+							<p>La madera tiene un impacto económico, ambiental y social
+								significativo:</p>
+							<ul>
+								<li><strong>Impacto económico:</strong> Generación de empleo: millones
+									de
+									empleos en silvicultura, carpintería, construcción y producción de
+									bienes.
+									Valor económico:productos de madera tienen alta demanda global en
+									sectores como la construcción, el mobiliario y la energía.</li>
+								<li><strong>Impacto ambiental:</strong> Captura de carbono: los árboles
+									almacenan carbono, y los productos de madera continúan almacenándolo
+									durante su vida útil. Reducción de la huella ecológica: reemplazar
+									materiales de alta emisión de carbono (como acero o concreto) por
+									madera
+									disminuye el impacto ambiental. Biodiversidad: la gestión forestal
+									sostenible protege hábitats naturales.</li>
+								<li><strong>Impacto social:</strong> Cultura y tradición: la madera ha
+									sido fundamental en las culturas del mundo para arquitectura, arte y
+									vida cotidiana. Vivienda asequible: construcciones en madera ofrecen
+									soluciones habitacionales rápidas y eficientes.</li>
+							</ul>
+						</section>
+
+						<section>
+							<h2 class="subtitulo">Beneficios de la madera</h2>
+							<img src="/Blog/imagenes/madera/6.jpg" alt class="imagen">
+							<ul>
+								<li><strong>Sostenibilidad:</strong> Material renovable si se gestiona
+									adecuadamente. Bajo impacto energético en su procesamiento en
+									comparación con otros materiales de construcción.</li>
+								<li><strong>Salud y bienestar:</strong> Ambientes construidos en madera
+									han demostrado mejorar la calidad del aire y el bienestar
+									psicológico.</li>
+								<li><strong>Estética y versatilidad:</strong> Variedad de tonos,
+									texturas
+									y propiedades mecánicas que permiten innumerables aplicaciones en
+									diseño
+									y arquitectura.</li>
+								<li><strong>Durabilidad:</strong> Con el tratamiento adecuado, la madera
+									puede durar cientos de años.</li>
+								<li><strong>Aislamiento térmico y acústico:</strong>
+									Naturalmente eficiente para regular temperatura y sonido en
+									edificaciones.</li>
+							</ul>
+						</section>
+
+						<section>
+							<h2 class="subtitulo">Conclusión</h2>
+							<p>La madera es uno de los recursos naturales más antiguos, nobles y
+								versátiles. Su correcto aprovechamiento y gestión sostenible no solo
+								contribuyen al desarrollo económico y social, sino que también son
+								esenciales para enfrentar los desafíos ambientales del presente y
+								futuro.
+								Apostar por la madera significa apostar por un planeta más equilibrado y
+								resiliente.</p>
+						</section>
+					</main>
+				</div>
+			</div>
+		</span>
+
+		<!-- == FIN -- DE BLOG MADERA == -->
+
+		<!-- == FIN -- DE CONTENIDO DE SALA == -->
+
+		<footer class="footer">
+			<section class="heading">
+				<h3 class="copyright">© MAMPA</h3>
+			</section>
+			<div class="footer-content">
+				<div class="footer-column">
+					<h3><b>SERVICIOS</b></h3>
+					<p>Diseña tu espacio</p>
+					<p>Diseña tu proyecto</p>
+					<p>Lee nuestro blog</p>
+				</div>
+				<div class="footer-column">
+					<h3><b>PRODUCTOS</b></h3>
+					<p>Muebles nuevos</p>
+					<p>Muebles de segunda mano</p>
+					<p>Decoración</p>
+				</div>
+				<div class="footer-column">
+					<h3><b>CONTÁCTANOS</b></h3>
+					<p><i class="fas fa-envelope"></i>
+						frankaissal@gmail.com</p>
+					<p><i class="fas fa-map-marker-alt"></i> Calle 19 #
+						Diagonal
+						a la Patagonia</p>
+					<p><i class="fas fa-phone-alt"></i> 300 378 3937</p>
+					<div class="social-icons">
+						<a href="https://www.instagram.com/?hl=en"><i
+								class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!--Bootstrap-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+			crossorigin="anonymous">
+        </script>
+		<!--fin Bootstrap-->
+
+	</body>
+</html>

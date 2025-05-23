@@ -1,0 +1,383 @@
+:root {
+    --nav-bg-color: #252525da;
+    --radius: 1.25rem;
+}
+
+/*HEADER*/
+
+body>header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body>header li {
+    list-style: none;
+}
+
+body>header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+body>header a:hover {
+    color: #643a0a;
+}
+
+body>header {
+    position: relative;
+    padding: 0 2rem;
+    width: 100%;
+    background-color: var(--nav-bg-color);
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar .links .dropdown>a {
+    color: white;
+}
+
+.navbar .links .dropdown>.dropdown-menu {
+    background: #434343;
+    opacity: 1;
+    border: none;
+}
+
+.navbar .links .dropdown>.dropdown-menu a {
+    color: white;
+}
+
+.navbar .links .dropdown .dropdown-divider {
+    border-color: rgb(91, 91, 91);
+}
+
+.dropdown-item:hover {
+    background-color: #595959;
+}
+
+.navbar .toggle_btn {
+    font: size 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: #76553b;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/*DROPDOWN MENU*/
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 3.75rem;
+    height: 0;
+    width: 18.75rem;
+    background-color: var(--nav-bg-color);
+    border-radius: 0 0 var(--radius) var(--radius);
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 15rem;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+/*== INICIO DE BLOG ARTE ==*/
+
+body .diseños {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body .diseños {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #faf8f6;
+    color: #2c2c2c;
+    line-height: 1.75;
+    padding: 10px;
+}
+
+.diseños header {
+    background-color: #9c8776;
+    color: #2b1100;
+    padding: 30px 15px;
+    text-align: center;
+    border-bottom: 3px solid #a77e58;
+}
+
+.diseños .titulo1 {
+    font-size: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: color 0.3s ease;
+}
+
+.diseños .titulo1:hover {
+    color: #e0c4a8;
+}
+
+.container-all {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.diseños {
+    flex: 1 1 100%;
+}
+
+.subtitulo {
+    font-size: 1.6rem;
+    margin: 40px 0 15px;
+    color: #4e3929;
+    border-left: 5px solid #b8885d;
+    padding-left: 12px;
+    transition: border-color 0.3s;
+}
+
+.subtitulo1:hover {
+    border-color: #a76f42;
+}
+
+.diseños section {
+    margin-bottom: 40px;
+}
+
+.diseños p {
+    font-size: 1.05rem;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.diseños img {
+    width: 50%;
+    border-radius: 10px;
+    margin: 15px 0;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 30px;
+}
+
+.diseños img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.diseños ul {
+    margin-left: 20px;
+    padding-left: 15px;
+    list-style-type: disc;
+}
+
+  /* Referencias */
+.diseños section:last-of-type p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+  /* Responsive */
+@media (min-width: 768px) {
+.row {
+    flex-direction: row;
+}
+
+.diseños {
+    flex: 1 1 100%;
+}
+
+.titulo1 {
+    font-size: 2.4rem;
+}
+}
+
+@media (max-width: 767px) {
+    .titulo {
+    font-size: 1.4rem;
+    padding: 0 10px;
+}
+
+.subtitulo1 {
+    font-size: 1.3rem;
+}
+
+img {
+    max-height: 300px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+}
+
+
+/*== FOOTER ==*/
+.footer {
+    background-color: black;
+    width: 100%;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 215px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin: left 100px;
+}
+
+.footer-column {
+    max-width: 400px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f2f2f2;
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.social-icons {
+    margin-top: 15px 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #857662;
+}
+
+.footer .heading .copyright {
+    color: white;
+}
+
+.footer .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 62rem) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 32px;
+        align-items: start;
+        text-align: center;
+        padding: 0 calc(50% - 72px);
+    }
+
+    .footer-column .social-icons {
+        margin-top: 16px;
+    }
+
+    .footer-content {
+        text-align: left;
+    }
+}
+

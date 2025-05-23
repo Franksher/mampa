@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decoración</title>
+        <!--==========remixicon-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+        <!--==========css-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- == INICIO -- BARRA MENU == -->
+        <script defer>
+            document.addEventListener("DOMContentLoaded" , () => loadScript())
+
+            const loadScript = () => {
+                const toggleBtn= document.querySelector('.toggle_btn')
+                const toggleBtnIcon= document.querySelector('.toggle_btn i')
+                const dropDowMenu= document.querySelector('.dropdown_menu')
+
+                console.log({ toggleBtn, toggleBtnIcon, dropDowMenu })
+
+                toggleBtn.onclick = function(){
+                    dropDowMenu.classList.toggle('open')
+                }   
+            } 
+
+        </script>
+
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/mampa.html">MAMPA</a>
+                </div>
+                <ul class="links">
+                    <li><a href="/Inicio/index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="/producto/muebles_nuevos/index.html">Muebles
+                                    Nuevos</a></li>
+                            <li><a class="dropdown-item"
+                                    href="/producto/muebles_segunda/index.html">Muebles
+                                    De Segunda Mano</a></li>
+                            <li><a class="dropdown-item"
+                                    href="/producto/decoracion/index.html">Decoración</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="/producto/calculadora_graficas/index.html">Calculadora</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/proyectos/index.html">Proyectos</a></li>
+                    <li><a href="/Recursos/recursos.html">Recursos</a></li>
+                    <li><a href="/Blog/Blog.html">Blog</a></li>
+                    <li><a href="/Nosotros/index.html">Nosotros</a></li>
+                </ul>
+                <a href="#" class="action_btn">Log In</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="/Inicio/index.html">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">Productos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                                href="/producto/muebles_nuevos/index.html">Muebles
+                                Nuevos</a></li>
+                        <li><a class="dropdown-item"
+                                href="/producto/muebles_segunda/index.html">Muebles
+                                De Segunda Mano</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item"
+                                href="/producto/decoracion/index.html">Decoración</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/Proyectos/index.html">Proyectos</a></li>
+                <li><a href="/Recursos/recursos.html">Recursos</a></li>
+                <li><a href="/Blog/Blog.html">Blog</a></li>
+                <li><a href="/Nosotros/index.html">Nosotros</a></li>
+                <li><a href="#" class="action_btn">Log In</a></li>
+            </div>
+        </header>
+
+        <!-- == FIN -- BARRA MENU == -->
+
+        <!-- == INICIO -- DE MUEBLES == -->
+
+        <section class="container-all">
+            <h2 class="container__title">Selecciona tu Producto </h2>
+
+            <div class="card__container">
+                <article>
+                    <!--CARD PRODUCT-->
+                    <div class="card__product">
+                        <img src="/producto/img_Muebles/img1.jpg" alt="image"
+                            class="card__img">
+
+                        <div>
+                            <h3 class="card__name">Lampara de Porcelana</h3>
+                            <span class="card__price">$223.000</span>
+                        </div>
+                    </div>
+
+                    <!-- POP MODAL-->
+                    <div class="modal">
+                        <div class="modal__card">
+                            <i class="ri-close-large-line modal__close"></i>
+
+                            <img src="/producto/img_Muebles/img1.jpg"
+                                alt="image"
+                                class="modal__img">
+
+                            <div>
+                                <h3 class="modal__name">Lampara de
+                                    Porcelana</h3>
+                                <p class="modal__info">
+                                    CÉRAMICA, MUY NATURAL
+                                    Su acabado envejecido y deslavado, que deja
+                                    entrever sus diferentes pátinas, de encanto
+                                    y un look único.
+                                </p>
+                                <span class="modal__price">$223.000</span>
+                            </div>
+
+                            <div class="modal__buttons">
+                                <button
+                                    class="modal__button modal__button-ghost">
+                                    buy Now</button>
+                                <button class="modal__button">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <!--CARD PRODUCT-->
+                    <div class="card__product">
+                        <img src="/producto/img_Muebles/img2.jpg" alt="image"
+                            class="card__img">
+
+                        <div>
+                            <h3 class="card__name">Lampara cilindrica
+                                Blanca</h3>
+                            <span class="card__price">$320.000</span>
+                        </div>
+                    </div>
+
+                    <!-- POP MODAL-->
+                    <div class="modal">
+                        <div class="modal__card">
+                            <i class="ri-close-large-line modal__close"></i>
+
+                            <img src="/producto/img_Muebles/img2.jpg"
+                                alt="image"
+                                class="modal__img">
+
+                            <div>
+                                <h3 class="modal__name">Lampara cilindrica
+                                    Blanca</h3>
+                                <p class="modal__info">
+                                    CÉRAMICA, MUY NATURAL
+                                    Su acabado envejecido y deslavado, que deja
+                                    entrever sus diferentes pátinas, de encanto
+                                    y un look único.
+                                </p>
+                                <span class="modal__price">$320.000</span>
+                            </div>
+
+                            <div class="modal__buttons">
+                                <button
+                                    class="modal__button modal__button-ghost">
+                                    buy Now</button>
+                                <button class="modal__button">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <!--CARD PRODUCT-->
+                    <div class="card__product">
+                        <img src="/producto/img_Muebles/img3.jpg" alt="image"
+                            class="card__img">
+
+                        <div>
+                            <h3 class="card__name">Escultura Torna Fresa</h3>
+                            <span class="card__price">150.000</span>
+                        </div>
+                    </div>
+
+                    <!-- POP MODAL-->
+                    <div class="modal">
+                        <div class="modal__card">
+                            <i class="ri-close-large-line modal__close"></i>
+
+                            <img src="/producto/img_Muebles/img3.jpg"
+                                alt="image" class="modal__img">
+
+                            <div>
+                                <h3 class="modal__name">Escultura Torna
+                                    Fresa</h3>
+                                <p class="modal__info">
+                                    CÉRAMICA, MUY NATURAL
+                                    Su acabado envejecido y deslavado, que deja
+                                    entrever sus diferentes pátinas, de encanto
+                                    y un look único.
+                                </p>
+                                <span class="modal__price">150.000</span>
+                            </div>
+
+                            <div class="modal__buttons">
+                                <button
+                                    class="modal__button modal__button-ghost">
+                                    buy Now</button>
+                                <button class="modal__button">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <!--CARD PRODUCT-->
+                    <div class="card__product">
+                        <img src="/producto/img_Muebles/img4.jpg" alt="image"
+                            class="card__img">
+
+                        <div>
+                            <h3 class="card__name">Lampara Flor de Loto</h3>
+                            <span class="card__price">$340.000</span>
+                        </div>
+                    </div>
+
+                    <!-- POP MODAL-->
+                    <div class="modal">
+                        <div class="modal__card">
+                            <i class="ri-close-large-line modal__close"></i>
+
+                            <img src="/producto/img_Muebles/img4.jpg"
+                                alt="image" class="modal__img">
+
+                            <div>
+                                <h3 class="modal__name">Lampara Flor de Loto
+                                </h3>
+                                <p class="modal__info">
+                                    CÉRAMICA, MUY NATURAL
+                                    Su acabado envejecido y deslavado, que deja
+                                    entrever sus diferentes pátinas, de encanto
+                                    y un look único.
+                                </p>
+                                <span class="modal__price">$340.000</span>
+                            </div>
+
+                            <div class="modal__buttons">
+                                <button
+                                    class="modal__button modal__button-ghost">
+                                    buy Now</button>
+                                <button class="modal__button">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <!--CARD PRODUCT-->
+                    <div class="card__product">
+                        <img src="/producto/img_Muebles/img5.jpg" alt="image"
+                            class="card__img">
+
+                        <div>
+                            <h3 class="card__name">Porcelana decorativa
+                                china</h3>
+                            <span class="card__price">$380.000</span>
+                        </div>
+                    </div>
+
+                    <!-- POP MODAL-->
+                    <div class="modal">
+                        <div class="modal__card">
+                            <i class="ri-close-large-line modal__close"></i>
+
+                            <img src="/producto/img_Muebles/img5.jpg"
+                                alt="image" class="modal__img">
+
+                            <div>
+                                <h3 class="modal__name">Porcelana decorativa
+                                    china</h3>
+                                <p class="modal__info">
+                                    CÉRAMICA, MUY NATURAL
+                                    Su acabado envejecido y deslavado, que deja
+                                    entrever sus diferentes pátinas, de encanto
+                                    y un look único.
+                                </p>
+                                <span class="modal__price">$380.000</span>
+                            </div>
+
+                            <div class="modal__buttons">
+                                <button
+                                    class="modal__button modal__button-ghost">
+                                    buy Now</button>
+                                <button class="modal__button">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <!--CARD PRODUCT-->
+                    <div class="card__product">
+                        <img src="/producto/img_Muebles/img6.jpg" alt="image"
+                            class="card__img">
+
+                        <div>
+                            <h3 class="card__name">Decoracion Artesana</h3>
+                            <span class="card__price">$250.000</span>
+                        </div>
+                    </div>
+
+                    <!-- POP MODAL-->
+                    <div class="modal">
+                        <div class="modal__card">
+                            <i class="ri-close-large-line modal__close"></i>
+
+                            <img src="/producto/img_Muebles/img6.jpg"
+                                alt="image" class="modal__img">
+
+                            <div>
+                                <h3 class="modal__name">Decoracion Artesana</h3>
+                                <p class="modal__info">
+                                    CÉRAMICA, MUY NATURAL
+                                    Su acabado envejecido y deslavado, que deja
+                                    entrever sus diferentes pátinas, de encanto
+                                    y un look único.
+                                </p>
+                                <span class="modal__price">$250.000</span>
+                            </div>
+
+                            <div class="modal__buttons">
+                                <button
+                                    class="modal__button modal__button-ghost">
+                                    buy Now</button>
+                                <button class="modal__button">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--===========swipwe js==============-->
+        <script src></script>
+
+        <!--===========main js================-->
+        <script src="/producto/muebles_nuevos/main.js"></script>
+
+        <!--=========== FIN DE MUEBLES ================-->
+        <footer class="footer">
+            <section class="heading">
+                <h3 class="copyright">© MAMPA</h3>
+            </section>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3><b>SERVICIOS</b></h3>
+                    <p>Diseña tu espacio</p>
+                    <p>Diseña tu proyecto</p>
+                    <p>Lee nuestro blog</p>
+                </div>
+                <div class="footer-column">
+                    <h3><b>PRODUCTOS</b></h3>
+                    <p>Muebles nuevos</p>
+                    <p>Muebles de segunda mano</p>
+                    <p>Decoración</p>
+                </div>
+                <div class="footer-column">
+                    <h3><b>CONTÁCTANOS</b></h3>
+                    <p><i class="fas fa-envelope"></i>
+                        frankaissal@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 19 #
+                        Diagonal
+                        a la Patagonia</p>
+                    <p><i class="fas fa-phone-alt"></i> 300 378 3937</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/?hl=en"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Bootstrap-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous">
+        </script>
+        <!--fin Bootstrap-->
+
+    </body>
+</html>

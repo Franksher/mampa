@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blog</title>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+			crossorigin="anonymous">
+		<link rel="stylesheet" href="diseño.css">
+	</head>
+	<body>
+
+		<!-- == INICIO -- BARRA MENU == -->
+		<script defer>
+            document.addEventListener("DOMContentLoaded" , () => loadScript())
+
+            const loadScript = () => {
+                const toggleBtn= document.querySelector('.toggle_btn')
+                const toggleBtnIcon= document.querySelector('.toggle_btn i')
+                const dropDowMenu= document.querySelector('.dropdown_menu')
+
+                console.log({ toggleBtn, toggleBtnIcon, dropDowMenu })
+
+                toggleBtn.onclick = function(){
+                    dropDowMenu.classList.toggle('open')
+                }   
+            } 
+
+        </script>
+
+		<header>
+			<div class="navbar">
+				<div class="logo">
+					<a href="/mampa.html">MAMPA</a>
+				</div>
+				<ul class="links">
+					<li><a href="/Inicio/index.html">Inicio</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">Productos</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item"
+									href="/producto/muebles_nuevos/index.html">Muebles
+									Nuevos</a></li>
+							<li><a class="dropdown-item"
+									href="/producto/muebles_segunda/index.html">Muebles
+									De Segunda Mano</a></li>
+							<li><a class="dropdown-item"
+									href="/producto/decoracion/index.html">Decoración</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item"
+									href="/producto/calculadora_graficas/index.html">Calculadora</a></li>
+						</ul>
+					</li>
+					<li><a href="/proyectos/index.html">Proyectos</a></li>
+					<li><a href="/Recursos/recursos.html">Recursos</a></li>
+					<li><a href="/Blog/Blog.html">Blog</a></li>
+					<li><a href="/Nosotros/index.html">Nosotros</a></li>
+				</ul>
+				<a href="#" class="action_btn">Log In</a>
+				<div class="toggle_btn">
+					<i class="fa-solid fa-bars-staggered"></i>
+				</div>
+			</div>
+
+			<div class="dropdown_menu">
+				<li><a href="/Inicio/index.html">Inicio</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#"
+						role="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false">Productos</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item"
+								href="/producto/muebles_nuevos/index.html">Muebles
+								Nuevos</a></li>
+						<li><a class="dropdown-item"
+								href="/producto/muebles_segunda/index.html">Muebles
+								De Segunda Mano</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item"
+								href="/producto/decoracion/index.html">Decoración</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/Proyectos/index.html">Proyectos</a></li>
+				<li><a href="/Recursos/recursos.html">Recursos</a></li>
+				<li><a href="/Blog/Blog.html">Blog</a></li>
+				<li><a href="/Nosotros/index.html">Nosotros</a></li>
+				<li><a href="#" class="action_btn">Log In</a></li>
+			</div>
+		</header>
+
+		<!-- == FIN -- BARRA MENU == -->
+
+		<!-- == INICIO -- DE BLOG DISEÑO == -->
+
+		<main class="diseños">
+			<header>
+				<h1 class="titulo1">Cómo Utilizar la Madera en el Diseño de Interiores:
+					Calidez, Estilo y Versatilidad</h1>
+			</header>
+			<div class="container-all">
+				<div class="row">
+
+					<section>
+						<h2 class="subtitulo1">El diseño</h2>
+						<p>La madera es uno de los materiales más nobles y versátiles en el diseño
+							de interiores. Su belleza natural, durabilidad y capacidad para aportar
+							calidez y carácter a los espacios la convierten en una elección
+							atemporal. Tanto en estilos rústicos como contemporáneos, la madera puede
+							transformar cualquier ambiente en un espacio acogedor y elegante. A
+							continuación, exploramos cómo utilizar la madera de manera efectiva en el
+							diseño de interiores.
+						</p>
+						<div class="image-gallery">
+							<img src="/Blog/imagenes/diseño/1.jpg" alt>
+						</div>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">1. El tipo de madera adecuado</h2>
+						<p>Cada tipo de madera ofrece un aspecto y una sensación únicos. Las
+							maderas claras como el abedul, el fresno o el roble blanco son ideales
+							para interiores luminosos y modernos. Por otro lado, las maderas oscuras
+							como la caoba, el nogal o el ébano aportan sofisticación y un aire más
+							clásico o dramático.</p>
+						<p>Además, no solo importa el color: la veta, la textura y el acabado de
+							la madera también deben armonizar con el estilo general del espacio.</p>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">2. La madera en elementos estructurales y
+							decorativos</h2>
+						<p>La madera puede estar presente de muchas maneras:</p>
+						<ul>
+							<li><strong>Suelos de madera:</strong> Aportan continuidad visual y una
+								sensación cálida bajo los pies. Las opciones varían desde maderas
+								macizas hasta suelos laminados o de ingeniería.</li>
+							<li><strong>Vigas expuestas:</strong> Añaden carácter arquitectónico y
+								resaltan un estilo rústico o industrial.</li>
+							<li><strong>Revestimientos de paredes:</strong> Un muro de madera puede
+								ser un punto focal impresionante, ya sea en forma de paneles lisos,
+								listones verticales o diseños geométricos.</li>
+							<li><strong>Mobiliario:</strong>Desde mesas y sillas hasta estanterías y
+								cabeceros, el mobiliario de madera maciza combina funcionalidad con
+								belleza atemporal.</li>
+						</ul>
+						<div class="image-gallery">
+							<img src="/Blog/imagenes/diseño/2.jpg" alt>
+						</div>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">3. Madera con otros materiales</h2>
+						<p>Para evitar un ambiente monótono o demasiado pesado, combina la madera
+							con otros materiales:</p>
+						<ul>
+							<li><strong>Metal:</strong> Ideal para crear contrastes modernos e
+								industriales.</li>
+							<li><strong>Vidrio:</strong> Aporta ligereza y transparencia.</li>
+							<li><strong>Textiles suaves:</strong> Como el lino, la lana o el
+								terciopelo, equilibran la solidez de la madera y suman confort.</li>
+							<p>La combinación de texturas hace que los espacios sean más dinámicos y
+								visualmente interesantes.</p>
+						</ul>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">4. Los acabados</h2>
+						<p>El acabado de la madera influye en la atmósfera de la habitación</p>
+						<ul>
+							<li><strong>Acabados mate o naturales::</strong> Refuerzan un estilo
+								orgánico y desenfadado.</li>
+							<li><strong>Barnices brillantes:</strong> Aportan un toque de
+								sofisticación y son ideales en diseños más formales o
+								contemporáneos.</li>
+							<li><strong>Tintes de color:</strong> Permiten personalizar la madera
+								para que se adapte a la paleta cromática del espacio.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">5. La sostenibilidad</h2>
+						<p>Cada vez más diseñadores optan por maderas de origen sostenible o
+							materiales reciclados. Certificaciones como FSC (Forest Stewardship
+							Council) garantizan que la madera proviene de fuentes responsables,
+							contribuyendo a la protección de los bosques y al diseño consciente.</p>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">6. El mantenimiento</h2>
+						<p>LAunque la madera es resistente, requiere cuidados para conservar su
+							belleza. Se recomienda limpiarla con productos suaves, protegerla de la
+							humedad excesiva y aplicar aceites o barnices periódicamente, según el
+							tipo de madera y el acabado.</p>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">Conclusión</h2>
+						<p>Utilizar la madera en el diseño de interiores no solo aporta estética,
+							sino también una conexión emocional con la naturaleza. Su adaptabilidad a
+							diferentes estilos, su calidez y su carácter artesanal la convierten en
+							un recurso imprescindible para crear espacios armónicos y llenos de vida.
+							Incorporar la madera con inteligencia y creatividad es una apuesta segura
+							para lograr ambientes que inviten a quedarse y disfrutar.</p>
+						<div class="image-gallery">
+							<img src="/Blog/imagenes/diseño/3.jpg" alt class="imagen">
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+
+		<!-- == FIN -- DE CONTENIDO DE DISEÑO == -->
+
+		<footer class="footer">
+			<section class="heading">
+				<h3 class="copyright">© MAMPA</h3>
+			</section>
+			<div class="footer-content">
+				<div class="footer-column">
+					<h3><b>SERVICIOS</b></h3>
+					<p>Diseña tu espacio</p>
+					<p>Diseña tu proyecto</p>
+					<p>Lee nuestro blog</p>
+				</div>
+				<div class="footer-column">
+					<h3><b>PRODUCTOS</b></h3>
+					<p>Muebles nuevos</p>
+					<p>Muebles de segunda mano</p>
+					<p>Decoración</p>
+				</div>
+				<div class="footer-column">
+					<h3><b>CONTÁCTANOS</b></h3>
+					<p><i class="fas fa-envelope"></i>
+						frankaissal@gmail.com</p>
+					<p><i class="fas fa-map-marker-alt"></i> Calle 19 #
+						Diagonal
+						a la Patagonia</p>
+					<p><i class="fas fa-phone-alt"></i> 300 378 3937</p>
+					<div class="social-icons">
+						<a href="https://www.instagram.com/?hl=en"><i
+								class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!--Bootstrap-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+			crossorigin="anonymous">
+        </script>
+		<!--fin Bootstrap-->
+
+	</body>
+</html>

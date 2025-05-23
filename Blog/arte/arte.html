@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blog</title>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+			crossorigin="anonymous">
+		<link rel="stylesheet" href="arte.css">
+	</head>
+	<body>
+
+		<!-- == INICIO -- BARRA MENU == -->
+		<script defer>
+            document.addEventListener("DOMContentLoaded" , () => loadScript())
+
+            const loadScript = () => {
+                const toggleBtn= document.querySelector('.toggle_btn')
+                const toggleBtnIcon= document.querySelector('.toggle_btn i')
+                const dropDowMenu= document.querySelector('.dropdown_menu')
+
+                console.log({ toggleBtn, toggleBtnIcon, dropDowMenu })
+
+                toggleBtn.onclick = function(){
+                    dropDowMenu.classList.toggle('open')
+                }   
+            } 
+
+        </script>
+
+		<header>
+			<div class="navbar">
+				<div class="logo">
+					<a href="/mampa.html">MAMPA</a>
+				</div>
+				<ul class="links">
+					<li><a href="/Inicio/index.html">Inicio</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">Productos</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item"
+									href="/producto/muebles_nuevos/index.html">Muebles
+									Nuevos</a></li>
+							<li><a class="dropdown-item"
+									href="/producto/muebles_segunda/index.html">Muebles
+									De Segunda Mano</a></li>
+							<li><a class="dropdown-item"
+									href="/producto/decoracion/index.html">Decoración</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item"
+									href="/producto/calculadora_graficas/index.html">Calculadora</a></li>
+						</ul>
+					</li>
+					<li><a href="/proyectos/index.html">Proyectos</a></li>
+					<li><a href="/Recursos/recursos.html">Recursos</a></li>
+					<li><a href="/Blog/Blog.html">Blog</a></li>
+					<li><a href="/Nosotros/index.html">Nosotros</a></li>
+				</ul>
+				<a href="#" class="action_btn">Log In</a>
+				<div class="toggle_btn">
+					<i class="fa-solid fa-bars-staggered"></i>
+				</div>
+			</div>
+
+			<div class="dropdown_menu">
+				<li><a href="/Inicio/index.html">Inicio</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#"
+						role="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false">Productos</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item"
+								href="/producto/muebles_nuevos/index.html">Muebles
+								Nuevos</a></li>
+						<li><a class="dropdown-item"
+								href="/producto/muebles_segunda/index.html">Muebles
+								De Segunda Mano</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item"
+								href="/producto/decoracion/index.html">Decoración</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/Proyectos/index.html">Proyectos</a></li>
+				<li><a href="/Recursos/recursos.html">Recursos</a></li>
+				<li><a href="/Blog/Blog.html">Blog</a></li>
+				<li><a href="/Nosotros/index.html">Nosotros</a></li>
+				<li><a href="#" class="action_btn">Log In</a></li>
+			</div>
+		</header>
+
+		<!-- == FIN -- BARRA MENU == -->
+
+		<main class="diseños">
+			<header>
+				<h1 class="titulo1">Diseño Interior con Madera: Claves para Crear Espacios
+					Elegantes y Atemporales</h1>
+			</header>
+			<div class="container">
+				<div class="row">
+
+					<section>
+						<h2 class="subtitulo1">La madera</h2>
+						<img src="/Blog/imagenes/arte/4.jpg" alt>
+						<p>La madera, como material de construcción y expresión, ha ocupado un
+							lugar esencial en la historia del diseño interior. Su versatilidad,
+							calidez táctil y carga simbólica la han convertido en uno de los recursos
+							más valorados por arquitectos y diseñadores a lo largo del tiempo. En
+							este artículo se examina el uso de la madera en la conformación de
+							habitaciones elegantes, a partir de una reflexión crítica y apoyada en
+							ejemplos canónicos de la arquitectura y el diseño contemporáneo e
+							histórico.</p>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">La Madera como Expresión de Calidad
+							Arquitectónica</h2>
+						<img src="/Blog/imagenes/arte/3.jpg" alt>
+						<p>El uso de la madera trasciende el mero ornamento; implica decisiones
+							técnicas, formales y simbólicas. Su aplicación en proyectos interiores de
+							alto nivel ha sido ampliamente documentada. Un ejemplo paradigmático es
+							la Casa Koshino (1984) del arquitecto japonés Tadao Ando, donde el
+							contraste entre el hormigón y las superficies de madera natural genera
+							una atmósfera de sobriedad refinada, en la que cada material encuentra su
+							rol expresivo. Allí, la madera se utiliza con contención, resaltando su
+							presencia por oposición al mineralismo del concreto.</p>
+						<p>Otro caso emblemático es la Villa Mairea (1939) de Alvar Aalto, que
+							constituye una referencia obligada en cuanto a la incorporación orgánica
+							de la madera en el diseño moderno. Aalto no solo utiliza la madera como
+							revestimiento o estructura, sino que la integra al mobiliario, a las
+							barandillas y a los elementos decorativos, fundiendo tradición y
+							modernidad en una experiencia espacial profundamente sensorial.</p>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">La Carpintería como Instrumento Compositivo</h2>
+						<p>Más allá de su función estructural, la madera ha sido utilizada como
+							medio de composición espacial. En los proyectos de Peter Zumthor, como en
+							las Termas de Vals (Suiza, 1996), si bien el material predominante es la
+							piedra, su uso contrastante de la madera en elementos interiores
+							—especialmente en los vestuarios y zonas de transición— evidencia un
+							entendimiento profundo de su potencia táctil y emocional.</p>
+						<p>La carpintería, cuando es abordada con sensibilidad, actúa como un
+							sistema de orden interno. Los revestimientos murales, techos artesonados,
+							zócalos y marcos de puertas no solo decoran: delimitan jerarquías
+							visuales, articulan circulaciones y refuerzan la unidad formal del
+							espacio. En este sentido, la madera no es añadida como un “extra
+							estético”, sino integrada como parte de la estructura perceptiva del
+							lugar.</p>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">El arte y las flores</h2>
+						<img src="/Blog/imagenes/arte/2.jpg" alt>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">Materialidad, Acabado y Tiempo</h2>
+						<p>El acabado de la madera es también una declaración de intención.
+							Arquitectos como John Pawson han defendido el uso de maderas claras con
+							acabados mate para enfatizar la pureza de las formas. Su proyecto para el
+							Novy Dvur Monastery (República Checa, 2004) es una lección de minimalismo
+							material, donde el uso del roble en su estado más natural actúa como
+							moderador de la luz y la temperatura del espacio.</p>
+						<p>La madera, a diferencia de materiales inertes, tiene una evolución
+							visible. Algunos diseñadores contemporáneos, como Kengo Kuma, han
+							trabajado precisamente con esa cualidad. En su proyecto para el GC
+							Prostho Museum Research Center (Japón, 2010), Kuma emplea una compleja
+							retícula de madera inspirada en técnicas tradicionales japonesas, que
+							además de definir el espacio, cambia con el tiempo, oxidándose y
+							adquiriendo una pátina única.</p>
+					</section>
+
+					<sec</main>tion>
+						<h2 class="subtitulo1">Aplicaciones Funcionales y Personalización</h2>
+						<p>En los espacios domésticos, la madera permite un grado de
+							personalización difícil de alcanzar con otros materiales. Los muebles a
+							medida, las librerías integradas, las puertas ocultas o los escritorios
+							empotrados pueden ejecutarse con una precisión artesanal que responde a
+							las necesidades específicas del habitante. La firma suiza Herzog & de
+							Meuron, en varios de sus proyectos residenciales, ha recurrido a la
+							carpintería artesanal como estrategia para vincular el diseño con el uso
+							cotidiano, dotando al espacio de una dimensión humana y táctil.</p>
+					</section>
+
+					<section>
+						<h2 class="subtitulo1">Conclusión</h2>
+						<img src="/Blog/imagenes/arte/1.jpg" alt>
+						<p>La madera, lejos de ser un recurso nostálgico o meramente tradicional,
+							se presenta como un medio contemporáneo de expresión espacial. Su
+							correcta aplicación en habitaciones interiores no solo garantiza belleza
+							y confort, sino también profundidad conceptual y resistencia al paso del
+							tiempo. A través de ejemplos históricos y actuales, se comprueba que la
+							elegancia de un espacio no depende exclusivamente del presupuesto
+							invertido, sino de la inteligencia con la que los materiales son
+							seleccionados, compuestos y vividos. En este marco, la carpintería bien
+							ejecutada no es decoración: es arquitectura.</p>
+
+						<section>
+							<h2>Referencias</h2>
+							<p>
+								Ando, Tadao. Tadao Ando: Complete Works 1975-Today. Taschen, 2022.
+
+								Aalto, Alvar. Villa Mairea: Architecture, Furniture and Interior. Alvar
+								Aalto Foundation, 2015.
+
+								Frampton, Kenneth. Studies in Tectonic Culture. MIT Press, 1995.
+
+								Zumthor, Peter. Atmospheres: Architectural Environments - Surrounding
+								Objects. Birkhäuser, 2006.
+
+								Pawson, John. Minimum. Phaidon Press, 1996.
+
+								Kuma, Kengo. Natural Architecture. Princeton Architectural Press, 2008.
+
+								Pallasmaa, Juhani. The Eyes of the Skin: Architecture and the Senses.
+								Wiley, 2012.
+							</p>
+						</section>
+					</section>
+
+				</div>
+			</div>
+		</main>
+		<!-- == FIN -- DE BLOG ARTE == -->
+
+		<footer class="footer">
+			<section class="heading">
+				<h3 class="copyright">© MAMPA</h3>
+			</section>
+			<div class="footer-content">
+				<div class="footer-column">
+					<h3><b>SERVICIOS</b></h3>
+					<p>Diseña tu espacio</p>
+					<p>Diseña tu proyecto</p>
+					<p>Lee nuestro blog</p>
+				</div>
+				<div class="footer-column">
+					<h3><b>PRODUCTOS</b></h3>
+					<p>Muebles nuevos</p>
+					<p>Muebles de segunda mano</p>
+					<p>Decoración</p>
+				</div>
+				<div class="footer-column">
+					<h3><b>CONTÁCTANOS</b></h3>
+					<p><i class="fas fa-envelope"></i>
+						frankaissal@gmail.com</p>
+					<p><i class="fas fa-map-marker-alt"></i> Calle 19 #
+						Diagonal
+						a la Patagonia</p>
+					<p><i class="fas fa-phone-alt"></i> 300 378 3937</p>
+					<div class="social-icons">
+						<a href="https://www.instagram.com/?hl=en"><i
+								class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!--Bootstrap-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+			crossorigin="anonymous">
+        </script>
+		<!--fin Bootstrap-->
+
+	</body>
+</html>

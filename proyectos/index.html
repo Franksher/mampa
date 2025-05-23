@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyectos</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="proyecto.css">
+    </head>
+    <body>
+
+        <!-- == INICIO -- BARRA MENU == -->
+        <script defer>
+            document.addEventListener("DOMContentLoaded" , () => loadScript())
+
+            const loadScript = () => {
+                const toggleBtn= document.querySelector('.toggle_btn')
+                const toggleBtnIcon= document.querySelector('.toggle_btn i')
+                const dropDowMenu= document.querySelector('.dropdown_menu')
+
+                console.log({ toggleBtn, toggleBtnIcon, dropDowMenu })
+
+                toggleBtn.onclick = function(){
+                    dropDowMenu.classList.toggle('open')
+                }   
+            } 
+
+        </script>
+
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/mampa.html">MAMPA</a>
+                </div>
+                <ul class="links">
+                    <li><a href="/Inicio/index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="/producto/muebles_nuevos/index.html">Muebles
+                                    Nuevos</a></li>
+                            <li><a class="dropdown-item"
+                                    href="/producto/muebles_segunda/index.html">Muebles
+                                    De Segunda Mano</a></li>
+                            <li><a class="dropdown-item"
+                                    href="/producto/decoracion/index.html">Decoración</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="/producto/calculadora_graficas/index.html">Calculadora</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/proyectos/index.html">Proyectos</a></li>
+                    <li><a href="/Recursos/recursos.html">Recursos</a></li>
+                    <li><a href="/Blog/Blog.html">Blog</a></li>
+                    <li><a href="/Nosotros/index.html">Nosotros</a></li>
+                </ul>
+                <a href="#" class="action_btn">Log In</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="/Inicio/index.html">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">Productos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                                href="/producto/muebles_nuevos/index.html">Muebles
+                                Nuevos</a></li>
+                        <li><a class="dropdown-item"
+                                href="/producto/muebles_segunda/index.html">Muebles
+                                De Segunda Mano</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item"
+                                href="/producto/decoracion/index.html">Decoración</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/Proyectos/index.html">Proyectos</a></li>
+                <li><a href="/Recursos/recursos.html">Recursos</a></li>
+                <li><a href="/Blog/Blog.html">Blog</a></li>
+                <li><a href="/Nosotros/index.html">Nosotros</a></li>
+                <li><a href="#" class="action_btn">Log In</a></li>
+            </div>
+        </header>
+
+        <!-- == FIN -- BARRA MENU == -->
+
+        <!-- == INICIO -- DE BLOG DISEÑO == -->
+
+        <main class="diseños">
+            <center>
+                <h1 class="titulo1">Raíces solidarias</h1>
+            </center>
+            <div class="container-all">
+                <section>
+                    <center>
+                        <h2 class="subtitulo1">Huertos de Esperanza</h2>
+                    </center>
+                    <h3>Jardines Urbanos en Cajas de Madera</h3>
+                    <strong>Objetivo:</strong>
+                    <p>Construir huertos elevados con madera reciclada para
+                        jardines comunitarios, escuelas o espacios públicos.</p>
+
+                    <strong>Impacto ambiental:</strong>
+                    <p>Estos huertos promueven la agricultura urbana, reducen la
+                        huella de carbono asociada al transporte de alimentos, y
+                        reutilizan madera descartada, evitando que se convierta
+                        en desecho.</p>
+
+                    <strong>Beneficio para la comunidad:</strong>
+                    <p>Fomentan la soberanía alimentaria, la educación ambiental
+                        y el trabajo colaborativo. Además, ofrecen una fuente
+                        accesible de vegetales frescos para familias y comedores
+                        comunitarios.</p>
+                    <div class="gallery">
+                        <img src="imagenes/Huertos para Jard__n/1.jpg"
+                            alt="img">
+                        <img src="imagenes/Huertos para Jard__n/2.jpg "
+                            alt="img">
+                        <img src="imagenes/Huertos para Jard__n/3.jpg"
+                            alt="img">
+                        <img src="imagenes/Huertos para Jard__n/4.jpg"
+                            alt="img">
+                    </div>
+                </section>
+
+                <section>
+                    <center>
+                        <h2 class="subtitulo1">Refugios de Vida</h2>
+                    </center>
+                    <h3>Casas para Insectos y Aves</h3>
+                    <strong>Objetivo:</strong>
+                    <p>Diseñar y construir casitas para aves y hoteles para
+                        insectos polinizadores, fomentando la biodiversidad</p>
+
+                    <strong>Impacto ambiental:</strong>
+                    <p>Estos refugios ayudan a conservar especies fundamentales
+                        para el equilibrio ecológico, como abejas, mariquitas y
+                        aves pequeñas, además de revalorizar la madera
+                        sobrante.</p>
+
+                    <strong>Beneficio para la comunidad:</strong>
+                    <p>Mejoran la salud de huertos, jardines y parques,
+                        impulsando la polinización y el control biológico de
+                        plagas. También brindan oportunidades de aprendizaje
+                        ecológico para niños y adultos.</p>
+                    <div class="gallery">
+                        <img src="imagenes/Insectos y pajaros/1.jpg" alt="img">
+                        <img src="imagenes/Insectos y pajaros/2.jpg" alt="img">
+                        <img src="imagenes/Insectos y pajaros/3.jpg" alt="img">
+                        <img src="imagenes/Insectos y pajaros/4.jpg" alt="img">
+                    </div>
+                </section>
+
+                <section>
+                    <center>
+                        <h2 class="subtitulo1">Juguetes con Historia</h2>
+                    </center>
+                    <h3>Regalos Artesanales para la Infancia</h3>
+                    <strong>Objetivo:</strong>
+                    <p>Crear juguetes de madera (rompecabezas, autos, bloques,
+                        figuras) para niños de bajos recursos, utilizando
+                        retazos sobrantes de carpinterí</p>
+                    <strong>Impacto ambiental:</strong>
+                    <p>Reutilizar madera evita la tala adicional de árboles y
+                        disminuye el volumen de residuos sólidos en
+                        vertederos.</p>
+                    <strong>Beneficio para la comunidad:</strong>
+                    <p>Ofrece a los niños acceso a juguetes seguros, duraderos y
+                        educativos. Favorece el desarrollo motor, la imaginación
+                        y el juego compartido, incluso en contextos de
+                        vulnerabilidad.</p>
+                    <div class="gallery">
+                        <img src="imagenes/juguetes/1.jpg" alt="img">
+                        <img src="imagenes/juguetes/2.jpg" alt="img">
+                        <img src="imagenes/juguetes/3.jpg" alt="img">
+                        <img src="imagenes/juguetes/4.jpg" alt="img">
+                    </div>
+                </section>
+            </div>
+
+            <div class="modal" id="modal">
+                <img id="modal-img" src alt="Imagen ampliada">
+            </div>
+
+            <section>
+                <h2 class="subtitulo1">Contacto</h2>
+                <h3>¿Te gustaría participar o colaborar?</h3>
+                <p>Estamos abiertos a voluntarios, donaciones de materiales y
+                    manos creativas que quieran construir un mundo más
+                    solidario.</p>
+
+                <form class="contact-form1">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5"
+                        required></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </section>
+        </main>
+
+        <script>
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+
+    document.querySelectorAll(".gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+    });
+    });
+
+    modal.addEventListener("click", () => {
+    modal.style.display = "none";
+    });
+</script>
+
+        <!-- == FIN -- DE CONTENIDO DE DISEÑO == -->
+
+        <footer class="footer">
+            <section class="heading">
+                <h3 class="copyright">© MAMPA</h3>
+            </section>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3><b>SERVICIOS</b></h3>
+                    <p>Diseña tu espacio</p>
+                    <p>Diseña tu proyecto</p>
+                    <p>Lee nuestro blog</p>
+                </div>
+                <div class="footer-column">
+                    <h3><b>PRODUCTOS</b></h3>
+                    <p>Muebles nuevos</p>
+                    <p>Muebles de segunda mano</p>
+                    <p>Decoración</p>
+                </div>
+                <div class="footer-column">
+                    <h3><b>CONTÁCTANOS</b></h3>
+                    <p><i class="fas fa-envelope"></i>
+                        frankaissal@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 19 #
+                        Diagonal
+                        a la Patagonia</p>
+                    <p><i class="fas fa-phone-alt"></i> 300 378 3937</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/?hl=en"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Bootstrap-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous">
+        </script>
+        <!--fin Bootstrap-->
+
+    </body>
+</html>
