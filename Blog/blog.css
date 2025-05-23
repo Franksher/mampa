@@ -157,7 +157,7 @@ header {
 }
 
 .dropdown_menu.open {
-    height: 15rem;
+    height: fit-content;
 }
 
 .dropdown_menu li {
